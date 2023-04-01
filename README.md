@@ -28,12 +28,18 @@ MongoDB-Compass 用于可视化操作mongodb数据库, 来自:https://www.mongod
 
 ## 注意事项
 
-等待编辑
+提前将自己的Django密钥填写至APIs>APIs>Setting.py
+
+提前将自己的推特开发者密钥填写至secrets.py
 
 ## 运行
 
 1. CMD输入`scrapy runspider article_spider.py -o recent_article_url.jsonl` 获得最近社区文章的url, 输出为jsonl格式
 2. CMD输入`scrapy runspider article_analysis.py -o article_IOCs.jsonl`爬虫获取所有文章的IOCs,输出为jsonl格式
-3. 将自己的twitter-api-key(需提前向Twitter官方申请)写入secrets.py文件, CMD输入 `py tweetfeed.py`获取最近的推文中的IOCs
-4. 配置Mongodb数据库, 注意设定集合规则, 运行ex_to_mongodb.py文件
-5. 查看数据库, 获得数据
+3. CMD输入 `py tweetfeed.py`获取最近的推文中的IOCs
+4. 运行`ex_to_mongodb.py`文件(需db要提前在mongdb-compass中配置好数据库参数,默认地址为:mongodb://localhost:27017/)
+5. 在`manage.py`的目录下运行命令`python manage.py runserver 8001`
+6. 将`validate.js`中的代码复制到Tampormonkey插件
+
+## 效果图
+
