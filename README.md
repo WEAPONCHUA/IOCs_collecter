@@ -19,6 +19,10 @@ tweepy 4.5.0
 Django 4.1.7
 ```
 
+## 项目文件说明
+
+<img src="./img/20230401192017.png" alt="image" style="zoom:80%;" />
+
 ## 技术支持
 
 ```
@@ -46,5 +50,7 @@ MongoDB-Compass 用于可视化操作mongodb数据库, 来自:https://www.mongod
 ![image](./img/image-20230401162002646.png)
 
 ![image](./img/image-20230401162022152.png)
+
+> 仅进行演示, 不代表所访问网站为恶意网站
 
 ![image](./img/image-20230401162146667.png)
